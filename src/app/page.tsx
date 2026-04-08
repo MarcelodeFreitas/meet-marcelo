@@ -395,7 +395,7 @@ export default function Page() {
                 <ChevronDown className="h-4 w-4 transition-transform duration-300 group-open:rotate-180" />
               </summary>
               <div className="mt-3 overflow-hidden rounded-lg border border-border bg-black">
-                <div className="aspect-video w-full">
+                <div className="hidden aspect-video w-full md:block">
                   <iframe
                     className="h-full w-full"
                     src="/education/masters-presentation-marcelo-marreiros.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
@@ -403,9 +403,25 @@ export default function Page() {
                     loading="lazy"
                   />
                 </div>
+                <div className="md:hidden">
+                  <div className="flex min-h-40 items-center justify-center px-4 py-8 text-center">
+                    <p className="text-sm text-muted-foreground">
+                      Preview is not supported on some mobile browsers. Open the presentation PDF directly.
+                    </p>
+                  </div>
+                </div>
               </div>
             </details>
             <div className="mt-3 flex flex-wrap gap-3">
+              <a
+                href="/education/masters-presentation-marcelo-marreiros.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="magnetic inline-flex items-center gap-2 rounded-lg border border-border bg-muted/80 px-4 py-2 text-sm font-semibold transition-colors hover:border-accent/70"
+              >
+                Open Presentation (PDF)
+                <ArrowUpRight className="h-4 w-4" />
+              </a>
               <a
                 href="/education/masters-thesis-marcelo-marreiros.pdf"
                 target="_blank"
