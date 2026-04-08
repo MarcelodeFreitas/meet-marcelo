@@ -136,7 +136,6 @@ export default function Page() {
 
             <div className="mt-6 flex flex-wrap gap-2">
               <span className="mono rounded-full border border-border bg-muted/80 px-3 py-1 text-xs">Braga, Portugal</span>
-              <span className="mono rounded-full border border-border bg-muted/80 px-3 py-1 text-xs">Open to work: Full remote Software Engineer / Platform Engineer</span>
             </div>
 
             <div className="mt-7 flex flex-wrap gap-3">
