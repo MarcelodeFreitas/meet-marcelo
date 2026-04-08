@@ -20,7 +20,7 @@ const nextConfig: NextConfig = {
       "default-src 'self'",
       "base-uri 'self'",
       "form-action 'self'",
-      "frame-ancestors 'none'",
+      "frame-ancestors 'self'",
       "img-src 'self' data: blob: https://github.com",
       "font-src 'self' data:",
       "style-src 'self' 'unsafe-inline'",
@@ -49,7 +49,7 @@ const nextConfig: NextConfig = {
           },
           {
             key: "X-Frame-Options",
-            value: "DENY",
+            value: "SAMEORIGIN",
           },
           {
             key: "Permissions-Policy",
