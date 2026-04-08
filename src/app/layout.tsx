@@ -4,6 +4,11 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Marcelo Marreiros | Software Developer",
   description: "C++ backend engineer focused on Bazel, gRPC, distributed systems, and retail POS modernization.",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
