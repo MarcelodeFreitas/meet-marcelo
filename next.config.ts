@@ -11,6 +11,11 @@ const nextConfig: NextConfig = {
     ],
   },
   async headers() {
+    const isDev = process.env.NODE_ENV !== "production";
+    if (isDev) {
+      return [];
+    }
+
     const contentSecurityPolicy = [
       "default-src 'self'",
       "base-uri 'self'",

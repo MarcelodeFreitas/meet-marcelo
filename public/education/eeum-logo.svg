@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0.00 0.00 310.00 163.00">
+<g stroke-width="2.00" fill="none" stroke-linecap="butt">
+<path stroke="#a64423" vector-effect="non-scaling-stroke" d="
+  M 181.75 0.00
+  L 155.56 0.25
+  Q 155.06 0.25 155.06 0.75
+  L 155.01 163.00"
+/>
+<path stroke="#a64423" vector-effect="non-scaling-stroke" d="
+  M 216.36 0.00
+  L 221.76 0.00"
+/>
+<path stroke="#a64423" vector-effect="non-scaling-stroke" d="
+  M 224.36 0.00
+  L 229.77 0.00"
+/>
+<path stroke="#a64423" vector-effect="non-scaling-stroke" d="
+  M 232.36 0.00
+  L 237.77 0.00"
+/>
+<path stroke="#a64423" vector-effect="non-scaling-stroke" d="
+  M 240.36 0.00
+  L 245.77 0.00"
+/>
+<path stroke="#a64423" vector-effect="non-scaling-stroke" d="
+  M 248.36 0.00
+  L 253.76 0.00"
+/>
+<path stroke="#a64423" vector-effect="non-scaling-stroke" d="
+  M 286.37 0.00
+  L 310.00 0.50"
+/>
+</g>
+<path fill="#c46d28" d="
+  M 181.75 0.00
+  L 216.36 0.00
+  L 221.76 0.00
+  L 224.36 0.00
+  L 229.77 0.00
+  L 232.36 0.00
+  L 237.77 0.00
+  L 240.36 0.00
+  L 245.77 0.00
+  L 248.36 0.00
+  L 253.76 0.00
+  L 286.37 0.00
+  L 310.00 0.50
+  L 310.00 163.00
+  L 155.01 163.00
+  L 155.06 0.75
+  Q 155.06 0.25 155.56 0.25
+  L 181.75 0.00
+  Z"
+/>
+<g fill="#871a1d">
+<path d="
+  M 0.00 0.00
+  L 181.75 0.00
+  L 155.56 0.25
+  Q 155.06 0.25 155.06 0.75
+  L 155.01 163.00
+  L 0.00 163.00
+  L 0.00 0.00
+  Z"
+/>
+<path d="
+  M 216.36 0.00
+  L 221.76 0.00
+  L 216.36 0.00
+  Z"
+/>
+<path d="
+  M 224.36 0.00
+  L 229.77 0.00
+  L 224.36 0.00
+  Z"
+/>
+<path d="
+  M 232.36 0.00
+  L 237.77 0.00
+  L 232.36 0.00
+  Z"
+/>
+<path d="
+  M 240.36 0.00
+  L 245.77 0.00
+  L 240.36 0.00
+  Z"
+/>
+<path d="
+  M 248.36 0.00
+  L 253.76 0.00
+  L 248.36 0.00
+  Z"
+/>
+<path d="
+  M 286.37 0.00
+  L 310.00 0.00
+  L 310.00 0.50
+  L 286.37 0.00
+  Z"
+/>
+</g>
+<g fill="#ffffff">
+<rect x="66.69" y="30.81" width="10.10" height="27.20" rx="4.85"/>
+<rect x="-25.48" y="-4.75" transform="translate(215.56,53.23) rotate(-36.0)" width="50.96" height="9.50" rx="4.62"/>
+<rect x="-25.44" y="-4.75" transform="translate(261.32,53.27) rotate(36.2)" width="50.88" height="9.50" rx="4.43"/>
+<rect x="-23.14" y="-5.03" transform="translate(46.97,68.28) rotate(29.5)" width="46.28" height="10.06" rx="4.75"/>
+<rect x="-23.05" y="-5.04" transform="translate(96.43,68.31) rotate(-30.2)" width="46.10" height="10.08" rx="4.81"/>
+<rect x="-4.77" y="-25.43" transform="translate(201.50,96.43) rotate(-18.5)" width="9.54" height="50.86" rx="4.57"/>
+<rect x="-4.78" y="-25.44" transform="translate(275.54,96.66) rotate(18.1)" width="9.56" height="50.88" rx="4.56"/>
+<rect x="66.69" y="88.22" width="10.12" height="46.14" rx="4.94"/>
+<rect x="-13.68" y="-5.03" transform="translate(38.56,101.31) rotate(-29.5)" width="27.36" height="10.06" rx="4.75"/>
+<rect x="-13.59" y="-5.02" transform="translate(104.43,101.44) rotate(31.1)" width="27.18" height="10.04" rx="4.73"/>
+<rect x="212.99" y="118.79" width="50.96" height="9.60" rx="4.69"/>
+</g>
+</svg>

@@ -350,6 +350,32 @@ body {
     translateY(calc(var(--ry) * 0.22px));
 }
 
+.skill-chip-progress {
+  animation: skillBorderFill var(--hold-ms, 1400ms) linear forwards;
+}
+
+@keyframes skillBorderFill {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.animate-edu-border-fill {
+  animation: eduBorderFill 950ms ease-out forwards;
+}
+
+@keyframes eduBorderFill {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
 .video-stable,
 .video-stable * {
   animation: none !important;
@@ -383,4 +409,15 @@ body {
   .magnetic:hover {
     transform: none !important;
   }
+
+  .skill-chip-progress {
+    animation: none !important;
+    clip-path: inset(0 0 0 0);
+  }
+
+  .animate-edu-border-fill {
+    animation: none !important;
+    clip-path: inset(0 0 0 0);
+  }
+
 }
