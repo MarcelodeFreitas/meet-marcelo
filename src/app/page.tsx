@@ -112,6 +112,8 @@ export default function Page() {
           </div>
           <a
             href="https://www.linkedin.com/in/marcelo-marreiros/"
+            target="_blank"
+            rel="noreferrer"
             className="mono inline-flex items-center gap-2 rounded-full border border-border bg-card/80 px-3 py-1 text-xs transition-colors hover:border-accent/70"
           >
             LinkedIn
@@ -141,6 +143,8 @@ export default function Page() {
             <div className="mt-7 flex flex-wrap gap-3">
               <a
                 href="https://www.linkedin.com/in/marcelo-marreiros/"
+                target="_blank"
+                rel="noreferrer"
                 className="magnetic inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-3 text-sm font-semibold text-accent-foreground transition-opacity hover:opacity-90"
               >
                 Contact on LinkedIn
@@ -148,6 +152,8 @@ export default function Page() {
               </a>
               <a
                 href="https://github.com/MarcelodeFreitas"
+                target="_blank"
+                rel="noreferrer"
                 className="magnetic inline-flex items-center gap-2 rounded-lg border border-border bg-muted/80 px-5 py-3 text-sm font-semibold transition-colors hover:border-accent/70"
               >
                 GitHub
@@ -341,8 +347,8 @@ export default function Page() {
             <div>
               <p className="mono text-[11px] uppercase tracking-[0.2em] text-accent">Links</p>
               <div className="mt-2 flex flex-col gap-2 text-sm text-muted-foreground">
-                <a href="https://www.linkedin.com/in/marcelo-marreiros/" className="transition-colors hover:text-foreground">LinkedIn</a>
-                <a href="https://github.com/MarcelodeFreitas" className="transition-colors hover:text-foreground">GitHub</a>
+                <a href="https://www.linkedin.com/in/marcelo-marreiros/" target="_blank" rel="noreferrer" className="transition-colors hover:text-foreground">LinkedIn</a>
+                <a href="https://github.com/MarcelodeFreitas" target="_blank" rel="noreferrer" className="transition-colors hover:text-foreground">GitHub</a>
                 <a href="/cv/marcelo-marreiros-cv-2026.pdf" download className="transition-colors hover:text-foreground">Download CV (PDF)</a>
               </div>
             </div>
