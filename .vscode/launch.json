@@ -2,10 +2,10 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Next.js: npm run dev",
+      "name": "Next.js: Dev (Single Stable Option)",
       "type": "node-terminal",
       "request": "launch",
-      "command": "npm run dev",
+      "command": "powershell -NoProfile -ExecutionPolicy Bypass -File .vscode/dev-stable.ps1",
       "cwd": "${workspaceFolder}"
     }
   ]
