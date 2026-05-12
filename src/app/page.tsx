@@ -123,11 +123,52 @@ const publication = {
 
 const certifications = [
   {
+    title: "AI Fluency: Framework & Foundations",
+    issuer: "Anthropic",
+    issued: "May 2026",
+    credentialId: "pypiq3rpyxx2",
+    link: "https://verify.skilljar.com/c/pypiq3rpyxx2",
+    category: "featured",
+  },
+  {
+    title: "Claude Code in Action",
+    issuer: "Anthropic",
+    issued: "May 2026",
+    credentialId: "tpmt3ucc4ior",
+    link: "https://verify.skilljar.com/c/tpmt3ucc4ior",
+    category: "featured",
+  },
+  {
+    title: "Introduction to Claude Cowork",
+    issuer: "Anthropic",
+    issued: "May 2026",
+    credentialId: "5mu4h6ximrif",
+    link: "https://verify.skilljar.com/c/5mu4h6ximrif",
+    category: "featured",
+  },
+  {
+    title: "Claude Code 101",
+    issuer: "Anthropic",
+    issued: "May 2026",
+    credentialId: "7qqr4zv9mrsd",
+    link: "https://verify.skilljar.com/c/7qqr4zv9mrsd",
+    category: "featured",
+  },
+  {
+    title: "Claude 101",
+    issuer: "Anthropic",
+    issued: "May 2026",
+    credentialId: "9634dq9odak8",
+    link: "https://verify.skilljar.com/c/9634dq9odak8",
+    category: "featured",
+  },
+  {
     title: "Structural Design Patterns in Modern C++",
     issuer: "Udemy",
     issued: "Jan 2026",
     credentialId: "UC-533531f0-b3ca-4595-8a56-db4ecbe7e7f1",
     link: "https://www.udemy.com/certificate/UC-533531f0-b3ca-4595-8a56-db4ecbe7e7f1/",
+    category: "other",
   },
   {
     title: "Object Oriented Programming and Design Crash Course",
@@ -135,6 +176,7 @@ const certifications = [
     issued: "Aug 2024",
     credentialId: "UC-1a1d89c7-3bac-4361-a653-930a168001b9",
     link: "https://www.udemy.com/certificate/UC-1a1d89c7-3bac-4361-a653-930a168001b9/",
+    category: "other",
   },
   {
     title: "Beginning C++ Programming - From Beginner to Beyond",
@@ -142,6 +184,7 @@ const certifications = [
     issued: "Aug 2024",
     credentialId: "UC-bb5e4a4c-3ea0-42c4-a19b-d37231c1d768",
     link: "https://www.udemy.com/certificate/UC-bb5e4a4c-3ea0-42c4-a19b-d37231c1d768/",
+    category: "other",
   },
   {
     title: "React Native: Develop Native APPs for Android and iOS",
@@ -149,8 +192,12 @@ const certifications = [
     issued: "Oct 2020",
     credentialId: "UC-70684d0a-2174-4ff4-9ec5-41d4a259b271",
     link: "https://www.udemy.com/certificate/UC-70684d0a-2174-4ff4-9ec5-41d4a259b271/",
+    category: "other",
   },
 ];
+
+const featuredCertifications = certifications.filter((cert) => cert.category === "featured");
+const otherCertifications = certifications.filter((cert) => cert.category === "other");
 
 export default function Page() {
   return (
@@ -209,6 +256,8 @@ export default function Page() {
 
             <div className="mt-6 flex flex-wrap gap-2">
               <span className="mono rounded-full border border-border bg-muted/80 px-3 py-1 text-xs">Braga, Portugal</span>
+              <span className="mono rounded-full border border-border bg-muted/80 px-3 py-1 text-xs">Remote</span>
+              <span className="mono rounded-full border border-border bg-muted/80 px-3 py-1 text-xs">Open to relocation</span>
             </div>
 
             <div className="mt-7 flex flex-wrap gap-3">
@@ -503,21 +552,74 @@ export default function Page() {
             <Sparkles className="h-5 w-5 text-accent" />
             <h2 className="text-2xl font-semibold sm:text-3xl">Licenses & Certifications</h2>
           </div>
-          <div className="grid gap-3">
-            {certifications.map((cert) => (
-              <article key={cert.credentialId} className="rounded-xl border border-border bg-background/40 p-4">
-                <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
-                  <p className="text-sm font-semibold sm:text-base">{cert.title}</p>
-                  <p className="mono text-xs text-muted-foreground">{cert.issued}</p>
+          <div className="space-y-4">
+            <article className="rounded-xl border border-accent/55 bg-background/50 p-4">
+              <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                <div>
+                  <p className="mono text-[11px] uppercase tracking-[0.2em] text-accent">Featured AI Certifications</p>
+                  <h3 className="mt-1 text-lg font-semibold">Anthropic</h3>
+                  <p className="mt-1 text-sm text-muted-foreground">
+                    {featuredCertifications.length} certificates completed in May 2026.
+                  </p>
                 </div>
-                <p className="mt-1 text-sm text-muted-foreground">{cert.issuer}</p>
-                <p className="mono mt-1 text-xs text-muted-foreground">Credential ID: {cert.credentialId}</p>
-                <a href={cert.link} target="_blank" rel="noreferrer" className="mono mt-2 inline-flex items-center gap-1 text-xs text-accent transition-colors hover:text-foreground">
-                  View Credential
-                  <ArrowUpRight className="h-3.5 w-3.5" />
-                </a>
-              </article>
-            ))}
+                <span className="mono w-fit rounded-full border border-accent/40 bg-accent/10 px-3 py-1 text-xs text-accent">
+                  May 2026
+                </span>
+              </div>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {featuredCertifications.map((cert) => (
+                  <span key={cert.credentialId} className="rounded-full border border-border bg-muted/70 px-3 py-1 text-xs text-muted-foreground">
+                    {cert.title}
+                  </span>
+                ))}
+              </div>
+              <details className="group mt-4 rounded-lg border border-border bg-card/70">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-4 py-3 text-sm font-semibold transition-colors hover:text-accent">
+                  <span>Show credentials</span>
+                  <ChevronDown className="h-4 w-4 transition-transform duration-300 group-open:rotate-180" />
+                </summary>
+                <div className="border-t border-border">
+                  {featuredCertifications.map((cert) => (
+                    <div key={cert.credentialId} className="flex flex-col gap-2 border-b border-border/70 px-4 py-3 last:border-b-0 sm:flex-row sm:items-center sm:justify-between">
+                      <div>
+                        <p className="text-sm font-semibold">{cert.title}</p>
+                        <p className="mono mt-1 text-xs text-muted-foreground">Credential ID: {cert.credentialId}</p>
+                      </div>
+                      <a href={cert.link} target="_blank" rel="noreferrer" className="mono inline-flex items-center gap-1 text-xs text-accent transition-colors hover:text-foreground">
+                        View Credential
+                        <ArrowUpRight className="h-3.5 w-3.5" />
+                      </a>
+                    </div>
+                  ))}
+                </div>
+              </details>
+            </article>
+
+            <details className="group rounded-xl border border-border bg-background/40">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-4 py-4 transition-colors hover:text-accent">
+                <div>
+                  <h3 className="text-base font-semibold">Other Certifications</h3>
+                  <p className="mt-1 text-sm text-muted-foreground">{otherCertifications.length} older certificates from Udemy and Udemy Business.</p>
+                </div>
+                <ChevronDown className="h-4 w-4 shrink-0 transition-transform duration-300 group-open:rotate-180" />
+              </summary>
+              <div className="border-t border-border">
+                {otherCertifications.map((cert) => (
+                  <div key={cert.credentialId} className="flex flex-col gap-2 border-b border-border/70 px-4 py-3 last:border-b-0 sm:flex-row sm:items-center sm:justify-between">
+                    <div>
+                      <p className="text-sm font-semibold sm:text-base">{cert.title}</p>
+                      <p className="mt-1 text-sm text-muted-foreground">
+                        {cert.issuer} · {cert.issued}
+                      </p>
+                    </div>
+                    <a href={cert.link} target="_blank" rel="noreferrer" className="mono inline-flex items-center gap-1 text-xs text-accent transition-colors hover:text-foreground">
+                      View Credential
+                      <ArrowUpRight className="h-3.5 w-3.5" />
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </details>
           </div>
         </section>
 
