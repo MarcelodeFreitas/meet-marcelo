@@ -637,6 +637,7 @@ export default function Page() {
               A1
             </a>
             , from a company known globally for consumer 3D printers and the maker ecosystem.
+            The announcement has reached 30M+ views.
           </p>
           <details className="group mt-4 rounded-xl border border-border bg-background/40 p-3 video-stable">
             <summary className="flex cursor-pointer list-none items-center justify-between gap-3 rounded-lg border border-border bg-muted/70 px-4 py-3 text-sm font-semibold transition-colors hover:border-accent/70">
