@@ -35,9 +35,19 @@ const impact = [
 
 const experience = [
   {
+    role: "Software Engineer",
+    company: "ALTEN (for ASML)",
+    period: "May 2026 - Present",
+    current: true,
+    bullets: [
+      "Working on the ASML project, focused on build systems and large-scale C++ environments.",
+      "Contributing to development workflows and tooling in complex C++ codebases.",
+    ],
+  },
+  {
     role: "Associate Software Developer",
-    company: "Tlantic",
-    period: "Feb 2026 - Present",
+    company: "Tlantic (for Sonae)",
+    period: "Feb 2026 - May 2026",
     bullets: [
       "Developing code generation, versioning, and build/deployment workflows in a modular Bazel-based POS architecture.",
       "Building internal diagnostics tooling and resolving Linux system-level issues across module lifecycle and service behavior.",
@@ -46,7 +56,7 @@ const experience = [
   },
   {
     role: "Junior Software Developer",
-    company: "Tlantic",
+    company: "Tlantic (for Sonae)",
     period: "Mar 2025 - Feb 2026",
     bullets: [
       "Contributed to the Unifo Modularization Project for Sonae POS.",
@@ -56,7 +66,7 @@ const experience = [
   },
   {
     role: "Trainee Software Developer",
-    company: "Tlantic",
+    company: "Tlantic (for Sonae)",
     period: "Jul 2024 - Mar 2025",
     bullets: [
       "Delivered customer data feature across UI and API layers.",
@@ -83,8 +93,12 @@ const experience = [
   },
 ];
 
-const tlanticJourney = experience.filter((item) => item.company === "Tlantic").slice(0, 3);
-const otherExperience = experience.filter((item) => !(item.company === "Tlantic" && tlanticJourney.includes(item)));
+const tlanticJourney = experience.filter((item) => item.company === "Tlantic (for Sonae)").slice(0, 3);
+const currentExperience = experience.find((item) => item.current) ?? experience[0];
+const otherExperience = experience.filter(
+  (item) =>
+    item !== currentExperience && !(item.company === "Tlantic (for Sonae)" && tlanticJourney.includes(item)),
+);
 
 const skills = [
   { label: "C++", url: "https://isocpp.org/" },
@@ -93,7 +107,7 @@ const skills = [
   { label: "Protobuf", url: "https://protobuf.dev/" },
   { label: "Distributed Systems", url: "https://en.wikipedia.org/wiki/Distributed_computing" },
   { label: "SQL", url: "https://www.postgresql.org/docs/" },
-  { label: "POS Systems", url: "https://en.wikipedia.org/wiki/Point_of_sale" },
+  { label: "Build Systems", url: "https://bazel.build/concepts/build-ref" },
   { label: "Developer Tooling", url: "https://martinfowler.com/articles/continuousIntegration.html" },
 ];
 
@@ -184,13 +198,13 @@ export default function Page() {
                 Software Engineer
               </span>
               <span className="mt-2 block text-xl font-medium text-muted-foreground sm:text-2xl">
-                C++ | Bazel | gRPC | Distributed Systems | POS Modernization
+                C++ | Build Systems | Bazel | gRPC | Distributed Systems
               </span>
             </h1>
 
             <p className="mt-6 max-w-3xl text-sm leading-relaxed text-muted-foreground sm:text-base">
-              Backend and systems engineer focused on modernizing large retail POS platforms with modular architecture,
-              build tooling, and production-grade service integration.
+              Software engineer focused on build systems, tooling, and production-grade backend integration in large-scale
+              C++ environments.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-2">
@@ -272,11 +286,26 @@ export default function Page() {
             <BriefcaseBusiness className="h-5 w-5 text-accent" />
             <h2 className="text-2xl font-semibold sm:text-3xl">Experience</h2>
           </div>
+          <article className="alive-section mb-5 rounded-2xl border border-accent/65 bg-card/85 p-5 shadow-[0_0_0_1px_hsl(var(--accent)/0.12),0_16px_32px_hsl(223_50%_5%/0.45)]">
+            <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <p className="mono mb-1 text-[11px] uppercase tracking-[0.2em] text-accent">Current Role</p>
+                <p className="text-2xl font-semibold">{currentExperience.role}</p>
+                <p className="text-base text-muted-foreground">{currentExperience.company}</p>
+              </div>
+              <p className="mono text-sm text-foreground/90">{currentExperience.period}</p>
+            </div>
+            <ul className="space-y-1 text-sm leading-relaxed text-muted-foreground sm:text-base">
+              {currentExperience.bullets.map((bullet) => (
+                <li key={bullet}>- {bullet}</li>
+              ))}
+            </ul>
+          </article>
           <div className="grid gap-5 lg:grid-cols-[1.2fr_0.8fr]">
             <article className="alive-section tilt-card rounded-xl border border-border bg-card/85 p-5">
               <div className="mb-4 flex items-start justify-between gap-3">
                 <div>
-                  <p className="text-lg font-semibold">Tlantic - Continuous Journey</p>
+                  <p className="text-lg font-semibold">Tlantic (for Sonae)</p>
                   <p className="text-sm text-muted-foreground">Trainee to Associate Software Developer progression</p>
                 </div>
                 <span className="mono animate-float-x rounded-full border border-accent/40 bg-accent/10 px-2 py-1 text-[10px] text-accent">
